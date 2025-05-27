@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 Selamat Datang di 20+1 🎂</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Floating Birthday Elements -->
+    <div class="float-element birthday-emoji" style="top: 10%; left: 5%;">🎂</div>
+    <div class="float-element birthday-emoji" style="top: 20%; right: 8%;">🎉</div>
+    <div class="float-element birthday-emoji" style="top: 60%; left: 3%;">🎈</div>
+    <div class="float-element birthday-emoji" style="top: 70%; right: 5%;">🎁</div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎉 Selamat Ulang Tahun Aflakha! 🎂</h1>
+            <p>selamat bertambah umur semoga yang di semogakan tersemogakan</p>
+        </div>
+
+        <!-- Photo Slideshow Section -->
+        <div class="section">
+            <h2>📸 bokem cantik bgt xixixi</h2>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="media/IMG-20250527-WA0004.jpg" alt="Foto 1" />
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="media/IMG-20250527-WA0005.jpg" alt="Foto 2" />
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="media/IMG-20250527-WA0006.jpg" alt="Foto 3" />
+                    <div class="slide-caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="media/IMG-20250527-WA0007.jpg" alt="Foto 4" />
+                    <div class="slide-caption"></div>
+                </div>
+                <!-- Tambahkan foto lain sesuai kebutuhan -->
+            </div>
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <!-- Birthday Messages Section -->
+        <div class="section">
+            <h2>💝 Ucapan Dari aiz</h2>
+            <div class="messages">
+                <div class="message-card">
+                    <h3>Aflakha Filosofi Galadea Selamat Ulang Tahun Yaaa! 🎊</h3>
+                    <p>"Semoga di umur yang ke 21 ini, semua impian dan harapan kamu menjadi kenyataan. Selamat bertambah usia, semoga selalu happy terus ya cantikk!"</p>
+                </div>
+                <div class="message-card">
+                    <h3>Doa Terbaik buat kamu sengg 🙏</h3>
+                    <p>"Di hari spesial ini, semoga aflakha diberi kesehatan, kebahagiaan, dan kesuksesan di setiap hal yang kamu lakuin yaaa cantikk."</p>
+                </div>
+                <div class="message-card">
+                    <h3>makasihh yaaa udah sabar ke aiz ⭐</h3>
+                    <p>"Semoga diumur kamu yg ke 21 ini masih bisa sabar ngadepin ribetnya aiz, dan segala sifat ngeselinya aiz yaa senggg"</p>
+                </div>
+                <div class="message-card">
+                    <h3>semangat yaaa 🌟</h3>
+                    <p>"rayakan diri kamu sebagai manusia yang baik yaa aflakha jangan pernah cape, ngeluh, apalagi punya pikiran buat nyerah inget buat ngelewatin semua nya satu hari lagi satu hari lagi dan lagi yaa cantikk. Selamat ulang tahun my love my moon my sun aiz!"</p>
+                </div>
+                <div class="message-card">
+                    <h3>TERAKHIRR 🌟</h3>
+                    <p>"Aiz gatau mau ngomong apa cuma aiz mau ngucapin makasih banyakkkkk ke mama kamu hehe, udah ngelahirin wanita sebaik kamu + secakep kamu. makasihh yaaa cantik udah hadir dihidup aiz MAKASIHHH BANYAKKK YAAAAAA UDAH AIZ GATAU MAU NGETIK APALAGIIIII, INTINYAAA AIZ SEKARANG SAYANG BANGET AMAA KAMUUU :3. ouh ya maaf yaaa kalo aiz kurang romantis HEHEHEHE"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="section">
+            <h2>🎬 aflakha moments</h2>
+            <div class="video-container">
+                <video controls poster="media/0528.mp4">
+                    <source src="media/0528.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video HTML5.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button class="play-btn" id="playBtn" onclick="toggleMusic()">▶️</button>
+        <input type="range" class="volume-control" id="volumeControl" min="0" max="100" value="50" onchange="setVolume(this.value)">
+        <span style="font-size: 0.9em; color: #666;">🎵</span>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/Iframe Nadhif Basalamah - bergema sampai selamanya (Official Lyric Video) [gvunApwKIiY].mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <!-- Script External -->
+    <script src="script.js"></script>
+</body>
+</html>
